@@ -1,8 +1,8 @@
-name: my-workflow
+name: testing-workflow
 on: [push, pull_request]
 
 jobs:
-  build:
+  unit_tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
