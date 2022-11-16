@@ -18,7 +18,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update -y
-          sudo apt-get install -y krb5-config
+          sudo ln -s /usr/bin/krb5-config.mit /usr/bin/krb5-config
           python -m pip install --upgrade pip
           pip install tox tox-gh-actions
       - name: Test with tox
